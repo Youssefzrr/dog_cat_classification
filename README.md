@@ -13,6 +13,26 @@ The **Dog-Cat Classification** project is a Flask-based web application that uti
 - **Web Interface**: Includes a minimal web interface (`index.html`) for easy interaction. Users can upload images through this interface.
 - **API Endpoint**: A `/predict` API endpoint to allow programmatic image uploads and predictions (useful for integration with other applications).
 
+### Running the Application from Repository
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Youssefzrr/dog_cat_classification.git
+   ```
+2. Navigate to the cloned repository directory:
+   ```bash
+   cd dog_cat_classification
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Ensure the `cat_or_dog.keras` model file is located in the `model/` directory.
+5. Start the Flask server:
+   ```bash
+   python app.py
+   ```
+6. Open a web browser and navigate to `http://127.0.0.1:5000/` to access the application.
 ---
 
 ## Project Structure
@@ -30,23 +50,6 @@ The **Dog-Cat Classification** project is a Flask-based web application that uti
 3. **Model Prediction**: The pre-processed image is fed into the model, which predicts the probability of the image depicting a dog or a cat.
 4. **Output**: The prediction (`dog` or `cat`) is returned as a JSON object.
 
----
-
-## Requirements
-
-### Python Packages
-The following Python libraries are required:
-
-- Flask
-- Keras
-- NumPy
-
-Install the dependencies with:
-```bash
-pip install flask keras numpy
-```
-
----
 
 ## Usage Instructions
 
@@ -87,7 +90,7 @@ The basic directory structure of the project is as follows:
 ```
 dog_cat_classification/
 │
-├── CNN/                    
+├── CNN/                    # related CNN experiments             
 ├── app.py                  # Main Flask application script
 ├── model/                  # Pre-trained deep learning model
 └── templates/
