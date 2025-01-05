@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader with Loading Animation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Uploader</h1>
+        <input type="file" id="imageUpload" accept="image/*">
+        <div id="loading" class="loading">
+            <div class="loading-bar"></div>
+            <div class="loading-text">0%</div>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
